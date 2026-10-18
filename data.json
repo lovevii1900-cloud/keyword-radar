@@ -2463,8 +2463,8 @@
           "discovered": "2026-10-18"
         },
         {
-          "term": "magnificent-one",
-          "term_cn": "Magnificent One",
+          "term": "gpt-image-2-5-sunburst",
+          "term_cn": "Gpt Image 2 5 Sunburst",
           "heat": 50,
           "heat_delta": "new",
           "spark": [
@@ -2517,12 +2517,12 @@
             "trend": {
               "score": 12,
               "status": "heuristic",
-              "note": "Google 联想词（父词 magnific one），真实搜索派生"
+              "note": "Google 联想词（父词 gpt image 2.5），真实搜索派生"
             },
             "demand": {
               "score": 18,
               "status": "measured",
-              "note": "Google 联想返回的真实用户搜索词（父词 magnific one）"
+              "note": "Google 联想返回的真实用户搜索词（父词 gpt image 2.5）"
             },
             "vacuum": {
               "score": 0,
@@ -2546,11 +2546,11 @@
             }
           },
           "discovered": "2026-10-18",
-          "long_tail_of": "magnific one"
+          "long_tail_of": "gpt image 2.5"
         },
         {
-          "term": "magnificent-one-totk",
-          "term_cn": "Magnificent One Totk",
+          "term": "gpt-image-2-5-flare",
+          "term_cn": "Gpt Image 2 5 Flare",
           "heat": 50,
           "heat_delta": "new",
           "spark": [
@@ -2603,12 +2603,12 @@
             "trend": {
               "score": 12,
               "status": "heuristic",
-              "note": "Google 联想词（父词 magnific one），真实搜索派生"
+              "note": "Google 联想词（父词 gpt image 2.5），真实搜索派生"
             },
             "demand": {
               "score": 18,
               "status": "measured",
-              "note": "Google 联想返回的真实用户搜索词（父词 magnific one）"
+              "note": "Google 联想返回的真实用户搜索词（父词 gpt image 2.5）"
             },
             "vacuum": {
               "score": 0,
@@ -2632,11 +2632,11 @@
             }
           },
           "discovered": "2026-10-18",
-          "long_tail_of": "magnific one"
+          "long_tail_of": "gpt image 2.5"
         },
         {
-          "term": "magnificent-ones-billy-corgan",
-          "term_cn": "Magnificent Ones Billy Corgan",
+          "term": "gpt-image-2-5-flare-vs-sunburst",
+          "term_cn": "Gpt Image 2 5 Flare Vs Sunburst",
           "heat": 50,
           "heat_delta": "new",
           "spark": [
@@ -2689,12 +2689,12 @@
             "trend": {
               "score": 12,
               "status": "heuristic",
-              "note": "Google 联想词（父词 magnific one），真实搜索派生"
+              "note": "Google 联想词（父词 gpt image 2.5），真实搜索派生"
             },
             "demand": {
               "score": 18,
               "status": "measured",
-              "note": "Google 联想返回的真实用户搜索词（父词 magnific one）"
+              "note": "Google 联想返回的真实用户搜索词（父词 gpt image 2.5）"
             },
             "vacuum": {
               "score": 0,
@@ -2718,11 +2718,11 @@
             }
           },
           "discovered": "2026-10-18",
-          "long_tail_of": "magnific one"
+          "long_tail_of": "gpt image 2.5"
         },
         {
-          "term": "magnificent-one-meaning",
-          "term_cn": "Magnificent One Meaning",
+          "term": "gpt-image-2-5-release-date",
+          "term_cn": "Gpt Image 2 5 Release Date",
           "heat": 50,
           "heat_delta": "new",
           "spark": [
@@ -2775,12 +2775,12 @@
             "trend": {
               "score": 12,
               "status": "heuristic",
-              "note": "Google 联想词（父词 magnific one），真实搜索派生"
+              "note": "Google 联想词（父词 gpt image 2.5），真实搜索派生"
             },
             "demand": {
               "score": 18,
               "status": "measured",
-              "note": "Google 联想返回的真实用户搜索词（父词 magnific one）"
+              "note": "Google 联想返回的真实用户搜索词（父词 gpt image 2.5）"
             },
             "vacuum": {
               "score": 0,
@@ -2804,11 +2804,11 @@
             }
           },
           "discovered": "2026-10-18",
-          "long_tail_of": "magnific one"
+          "long_tail_of": "gpt image 2.5"
         },
         {
-          "term": "magnificent-one-word-meaning",
-          "term_cn": "Magnificent One Word Meaning",
+          "term": "gpt-image-2-5-free",
+          "term_cn": "Gpt Image 2 5 Free",
           "heat": 50,
           "heat_delta": "new",
           "spark": [
@@ -2861,12 +2861,12 @@
             "trend": {
               "score": 12,
               "status": "heuristic",
-              "note": "Google 联想词（父词 magnific one），真实搜索派生"
+              "note": "Google 联想词（父词 gpt image 2.5），真实搜索派生"
             },
             "demand": {
               "score": 18,
               "status": "measured",
-              "note": "Google 联想返回的真实用户搜索词（父词 magnific one）"
+              "note": "Google 联想返回的真实用户搜索词（父词 gpt image 2.5）"
             },
             "vacuum": {
               "score": 0,
@@ -2890,7 +2890,7 @@
             }
           },
           "discovered": "2026-10-18",
-          "long_tail_of": "magnific one"
+          "long_tail_of": "gpt image 2.5"
         }
       ],
       "label": "AI工具词"
@@ -2901,7 +2901,7 @@
       "status": "coming_soon"
     }
   },
-  "updated_at": "2026-10-18T21:45:17.656871+08:00",
+  "updated_at": "2026-10-18T21:47:09.678751+08:00",
   "meta": {
     "last_rainbowsea_ok": true,
     "last_huggingface_ok": true,
