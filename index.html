@@ -69,12 +69,26 @@
       </div>
     </section>
 
-    <!-- Games placeholder -->
+    <!-- Games table -->
     <section id="view-games" class="view">
-      <div class="coming-soon">
-        <div class="cs-icon">🎮</div>
-        <h2>游戏词频道即将上线</h2>
-        <p>正在接入 Google Trends 游戏词数据源<br>敬请期待</p>
+      <div class="table-wrap">
+        <table class="kw-table">
+          <thead>
+            <tr>
+              <th class="col-term">词</th>
+              <th class="col-spark">曲线</th>
+              <th class="col-tags">标签</th>
+              <th class="col-score">机会等级</th>
+              <th class="col-heat">热度</th>
+              <th class="col-delta">较上次</th>
+              <th class="col-vacuum">真空度</th>
+              <th class="col-trends">Trends</th>
+              <th class="col-comp">首页竞争</th>
+              <th class="col-action"></th>
+            </tr>
+          </thead>
+          <tbody id="kwBodyGames"></tbody>
+        </table>
       </div>
     </section>
 

@@ -44,6 +44,14 @@ ai_tools: [
 { key: 'buildable', label: '可做度', weight: 15, max: 15},
 { key: 'monetize', label: '变现潜力', weight: 10, max: 10},
 { key: 'brand', label: '品牌风险', weight: 10, max: 10},
+],
+games: [
+{ key: 'momentum', label: '玩家动量', weight: 25, max: 25},
+{ key: 'demand', label: '搜索需求', weight: 20, max: 20},
+{ key: 'serp', label: 'SERP机会', weight: 20, max: 20},
+{ key: 'depth', label: '机制深度', weight: 15, max: 15},
+{ key: 'tool', label: '工具潜力', weight: 10, max: 10},
+{ key: 'brand', label: '品牌纯净', weight: 10, max: 10},
 ]
 };
 
@@ -91,8 +99,8 @@ if (level === '中等') return 'mid';
 return '';
 }
 
-function renderTable(keywords) {
-const body = document.getElementById('kwBody');
+function renderTable(keywords, tbodyId) {
+const body = document.getElementById(tbodyId || 'kwBody');
 body.innerHTML = '';
 // sort by score desc
 const sorted = [...keywords].sort((a, b) => b.score - a.score);
@@ -147,9 +155,17 @@ btn.addEventListener('click', () => showReview(sorted[+btn.dataset.idx]));
 }
 
 function showReview(kw) {
+const chDims = (currentChannel === 'games' && DIMENSIONS.games) || DIMENSIONS.ai_tools;
+let d, total;
+if (kw.score_detail) {
+d = chDims.map(dim => {
+const s = kw.score_detail[dim.key] || {score: 0, note: '无数据'};
+return {...dim, score: s.score, note: s.note || ''};
+});
+total = d.reduce((s, x) => s + x.score, 0);
+} else {
 const dims = DIMENSIONS.ai_tools;
-// derive dimension scores from available data (mock logic for Phase 1)
-const d = [
+d = [
 {...dims[0], score: Math.min(25, Math.round(kw.spark[kw.spark.length - 1] / 4)), note: `近${kw.spark_count}${kw.spark_unit}趋势${kw.trends}`},
 {...dims[1], score: Math.min(20, Math.round(kw.heat / 200)), note: `热度指数 ${kw.heat.toLocaleString()}`},
 {...dims[2], score: Math.round(kw.vacuum / 5), note: `真空度 ${kw.vacuum}/100`},
@@ -157,7 +173,8 @@ const d = [
 {...dims[4], score: 7, note: 'AI工具站变现路径成熟'},
 {...dims[5], score: kw.term.includes('flux') || kw.term.includes('nano') || kw.term.includes('gpt') || kw.term.includes('magnific') || kw.term.includes('krea') || kw.term.includes('qwen')? 4: 9, note: '品牌词，长尾为主'},
 ];
-const total = d.reduce((s, x) => s + x.score, 0);
+total = d.reduce((s, x) => s + x.score, 0);
+}
 const verdict = total >= 60? ['go', '✅ 建议做', '机会明确，内容页先行，一天可出。']
 : total >= 40? ['wait', '⏳ 观望', '再观察几天趋势，或等竞争格局变化。']
 : ['skip', '⏭ 暂缓', '窗口已过或竞争过强，不投入。'];
@@ -202,6 +219,7 @@ renderTable(DATA.channels.ai_tools.keywords);
 } else if (ch === 'games') {
 document.getElementById('view-games').classList.add('active');
 document.getElementById('channelTitle').textContent = '游戏词';
+renderTable(DATA.channels.games.keywords, 'kwBodyGames');
 }
 // close sidebar on mobile
 document.getElementById('sidebar').classList.remove('open');
