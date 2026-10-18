@@ -103,6 +103,28 @@
 - **价值**：接上后可把 `SERP真空度` 从 unknown 变成 measured——自动查每个词 Google 前 10，看独立站占比。
 - **后续**：等有空闲服务器或用户批准后再搭。
 
+## 11. Sitemap 盯梢（哥飞方法，2026-10-19 新增）
+
+- **方法来源**：哥飞公众号文章《找不到新词？用 Sitemap 盯住同行最近更新的页面》（2026-10-18）。核心：监控高频上新的同行站 sitemap，两次抓取做 diff，新出现的工具页 URL 就是候选词。
+- **监控清单**（`scripts/sitemap_sites.json`，7 个，全部实测 sitemap 可达）：
+  | 站点 | 工具页 URL 格式 | 基线量 |
+  |------|----------------|--------|
+  | toolify.ai | `/tool/{slug}`（只取尾部 3 个子 sitemap） | ~5.8k |
+  | futuretools.io | `/tools/{slug}-{8位hash}`（strip hash） | ~4.4k |
+  | opentools.ai | `/tools/{slug}` | ~6.6k |
+  | aidirectory.com | `/{slug}`（sitemap/tools.xml 已限定） | ~2.5k |
+  | toolpilot.ai | `/products/{slug}`（Shopify） | ~3.4k |
+  | aitoptools.com | 直连 urlset | ~11k |
+  | aiassistantstore.com | `/products/{slug}`（Shopify） | ~60 |
+- **基线**：`scripts/sitemap_baseline.json`（domain → [url]），首次运行只建基线不产出。
+- **提词规则**：slug 清洗（去 hash、去首尾连字符）→ term；<3 字符、纯 hash、纯数字、成人词直接丢弃；分页/tag/author URL 跳过。
+- **打分**：趋势动量 heuristic（同行新上架=对方编辑认为值得收录）；可做度 heuristic 高分（同行已做成工具页，可对标）；SERP真空度 unknown。
+- **局限**（如实标注）：
+  - lastmod ≠ 发布时间，diff 只看"新出现"不看 lastmod，避免误报。
+  - toolify 只监控尾部 3 个子 sitemap（每个 2 万 URL，全量成本过高）；新工具理论上集中在尾部。
+  - 有些站用 CDATA / `&amp;` 转义，已做兼容；aivalley.ai（新闻站非工具目录）、insidr.ai（仅 1 个产品页）已剔除。
+  - sitemap 本身可能滞后 1 天；部分站可能屏蔽非常规 UA（当前 UA 正常）。
+
 ## 评分维度状态说明
 
 | 维度 | 权重 | 主要依据 | 状态 |
@@ -116,7 +138,7 @@
 
 ## 每日行为
 
-1. 八个可用来源各在 try/except 中独立抓取，失败记日志不中断（Reddit/pytrends 跳过）。
+1. 九个可用来源各在 try/except 中独立抓取，失败记日志不中断（Reddit/pytrends 跳过）。
 2. 去重：已存在（不分大小写）或 trends-monitor 已淘汰的跳过。
 3. 主源新词按总分排序，每天最多加 5 个；联想词长尾独立预算，最多加 5 个。
 4. 现有词分数**不自动改**（无新实测数据不调整），只刷新 `updated_at`。

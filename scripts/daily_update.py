@@ -13,6 +13,7 @@
 7. Hacker News API — top 30 中 Show HN / Launch HN 的 AI 产品
 8. GitHub Search API — 近 45 天创建的 AI 图像/视频生成仓库（unauthenticated）
 9. Reddit — 403 被墙，不可用
+10. Sitemap 盯梢（哥飞方法）— 7 个同行 AI 工具站 sitemap diff，新上架工具页提词
 
 每条关键词必须能追溯到至少一个真实来源（sources 字段）。
 任一来源失败不影响其他来源；全部失败则保持数据不变，只记日志。
@@ -463,6 +464,10 @@ def score_keyword(term, src_info):
             dims['trend'] = (11, 'heuristic', f'GitHub {stars} stars')
         else:
             dims['trend'] = (7, 'heuristic', f'GitHub {stars} stars，刚起量')
+    elif src == 'sitemap-watch':
+        # 同行工具站新上架的工具页 = 对方编辑认为值得收录，趋势给中等启发式分
+        dims['trend'] = (10, 'heuristic',
+                         f'{info.get("spotted_on", "")} 新上架工具页（sitemap diff 实测）')
     else:
         dims['trend'] = (0, 'unknown', '无趋势数据源')
 
@@ -509,6 +514,9 @@ def score_keyword(term, src_info):
         dims['buildable'] = (10, 'heuristic', '新工具/新仓库，可做内容页或对标页')
     elif src == 'hackernews':
         dims['buildable'] = (8, 'heuristic', 'HN 热议产品，可做内容页')
+    elif src == 'sitemap-watch':
+        dims['buildable'] = (11, 'heuristic',
+                             f'同行已做成工具页（{info.get("spotted_on", "")}），可对标建页')
     else:
         dims['buildable'] = (0, 'unknown', '类型不明')
 
@@ -583,6 +591,8 @@ def build_entry(term, src_info, total, dims):
         tags.append({'text': f'HN {info.get("hn_score", 0)}分', 'type': 'hot'})
     if src == 'github-trending':
         tags.append({'text': f'GH {info.get("stars", 0)}★', 'type': 'hot'})
+    if src == 'sitemap-watch':
+        tags.append({'text': f'同行新页@{info.get("spotted_on", "")}', 'type': 'hot'})
     tags.append({'text': 'AI工具', 'type': 'cat'})
     if dims['vacuum'][1] == 'unknown':
         tags.append({'text': '真空待查', 'type': 'warn'})
@@ -708,6 +718,29 @@ def main():
     # Source 8: Reddit — 403 被墙，不可用（见 sources.md）
     ok_sources['reddit'] = False
 
+    # Source 9: Sitemap 盯梢（哥飞方法）— 同行工具站新上架页面 diff
+    try:
+        sys.path.insert(0, os.path.join(REPO_DIR, 'scripts'))
+        from sitemap_watch import fetch_sitemap_watch
+        sw = fetch_sitemap_watch()
+        ok_sources['sitemap_watch'] = True
+        sw_added_terms = 0
+        for term, info in sw:
+            if not term or len(term) < 3 or len(term) > 40:
+                continue
+            if any(h in term for h in ADULT_HINTS):
+                continue
+            candidates.setdefault(term, {'sources': [], 'primary': 'sitemap-watch', 'data': {}})
+            if 'sitemap-watch' not in candidates[term]['sources']:
+                candidates[term]['sources'].append('sitemap-watch')
+            candidates[term]['data'].update(info)
+            sw_added_terms += 1
+        log(f"sitemap-watch: {sw_added_terms} candidates from sitemap diffs")
+    except Exception as e:
+        ok_sources['sitemap_watch'] = False
+        log(f"sitemap-watch failed: {e} (non-fatal)")
+    time.sleep(1)
+
     if not any(ok_sources.values()):
         log("ALL sources failed — keeping existing data unchanged")
         return 1
@@ -772,6 +805,7 @@ def main():
     meta['last_hackernews_ok'] = ok_sources.get('hackernews')
     meta['last_github_trending_ok'] = ok_sources.get('github_trending')
     meta['last_autocomplete_ok'] = ok_sources.get('autocomplete')
+    meta['last_sitemap_watch_ok'] = ok_sources.get('sitemap_watch')
     meta['pytrends_available'] = False
     meta['reddit_available'] = False
     meta['new_added'] = added
