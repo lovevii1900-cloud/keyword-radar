@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选词雷达监控站</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-title">选词雷达</div>
+      <div class="brand-sub">关键词机会监控站</div>
+    </div>
+    <nav class="nav">
+      <div class="nav-label">频道</div>
+      <button class="nav-item active" data-channel="ai_tools">
+        <span class="nav-icon">🤖</span> AI工具词
+      </button>
+      <button class="nav-item" data-channel="games">
+        <span class="nav-icon">🎮</span> 游戏词
+      </button>
+      <div class="nav-label">功能</div>
+      <button class="nav-item" data-view="daily">
+        <span class="nav-icon">📊</span> 日报总览
+      </button>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="update-time">数据更新：<span id="updateTime">—</span></div>
+    </div>
+    <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <h1 id="channelTitle">AI工具词</h1>
+      <div class="topbar-right">
+        <span class="live-dot"></span><span class="live-text">每日自动更新</span>
+      </div>
+    </header>
+
+    <!-- AI tools table -->
+    <section id="view-ai_tools" class="view active">
+      <div class="table-wrap">
+        <table class="kw-table">
+          <thead>
+            <tr>
+              <th class="col-term">词</th>
+              <th class="col-spark">曲线</th>
+              <th class="col-tags">标签</th>
+              <th class="col-score">机会等级</th>
+              <th class="col-heat">热度</th>
+              <th class="col-delta">较上次</th>
+              <th class="col-vacuum">真空度</th>
+              <th class="col-trends">Trends</th>
+              <th class="col-comp">首页竞争</th>
+              <th class="col-action"></th>
+            </tr>
+          </thead>
+          <tbody id="kwBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Games placeholder -->
+    <section id="view-games" class="view">
+      <div class="coming-soon">
+        <div class="cs-icon">🎮</div>
+        <h2>游戏词频道即将上线</h2>
+        <p>正在接入 Google Trends 游戏词数据源<br>敬请期待</p>
+      </div>
+    </section>
+
+    <!-- Daily report -->
+    <section id="view-daily" class="view">
+      <div class="daily">
+        <h2>📊 日报总览</h2>
+        <div class="daily-cards" id="dailyCards"></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Detail modal -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <h3 id="modalTitle">深审报告</h3>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
