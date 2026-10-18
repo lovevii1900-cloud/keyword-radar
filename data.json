@@ -49,7 +49,14 @@
           "term": "flux 3 image klein",
           "term_cn": "FLUX 3 Image Klein",
           "trends": "上涨",
-          "vacuum": 92
+          "vacuum": 92,
+          "sources": [
+            "manual-research"
+          ],
+          "discovered": "2026-10-18",
+          "score_detail": {
+            "note": "2026-10-18 前手工录入（决策堆研究），未经过自动流水线打分；分数为录入时人工评估"
+          }
         },
         {
           "competition": {
@@ -98,7 +105,14 @@
           "term": "magnific one",
           "term_cn": "Magnific One",
           "trends": "下降",
-          "vacuum": 88
+          "vacuum": 88,
+          "sources": [
+            "manual-research"
+          ],
+          "discovered": "2026-10-18",
+          "score_detail": {
+            "note": "2026-10-18 前手工录入（决策堆研究），未经过自动流水线打分；分数为录入时人工评估"
+          }
         },
         {
           "competition": {
@@ -147,7 +161,14 @@
           "term": "nano banana 2.1",
           "term_cn": "Nano Banana 2.1",
           "trends": "上涨",
-          "vacuum": 15
+          "vacuum": 15,
+          "sources": [
+            "manual-research"
+          ],
+          "discovered": "2026-10-18",
+          "score_detail": {
+            "note": "2026-10-18 前手工录入（决策堆研究），未经过自动流水线打分；分数为录入时人工评估"
+          }
         },
         {
           "competition": {
@@ -196,7 +217,14 @@
           "term": "gpt image 2.5",
           "term_cn": "GPT Image 2.5",
           "trends": "上涨",
-          "vacuum": 45
+          "vacuum": 45,
+          "sources": [
+            "manual-research"
+          ],
+          "discovered": "2026-10-18",
+          "score_detail": {
+            "note": "2026-10-18 前手工录入（决策堆研究），未经过自动流水线打分；分数为录入时人工评估"
+          }
         },
         {
           "competition": {
@@ -245,7 +273,14 @@
           "term": "krea 2",
           "term_cn": "Krea 2",
           "trends": "上涨",
-          "vacuum": 60
+          "vacuum": 60,
+          "sources": [
+            "manual-research"
+          ],
+          "discovered": "2026-10-18",
+          "score_detail": {
+            "note": "2026-10-18 前手工录入（决策堆研究），未经过自动流水线打分；分数为录入时人工评估"
+          }
         },
         {
           "competition": {
@@ -294,7 +329,14 @@
           "term": "qwen image 2.1",
           "term_cn": "Qwen-Image 2.1",
           "trends": "上涨",
-          "vacuum": 65
+          "vacuum": 65,
+          "sources": [
+            "manual-research"
+          ],
+          "discovered": "2026-10-18",
+          "score_detail": {
+            "note": "2026-10-18 前手工录入（决策堆研究），未经过自动流水线打分；分数为录入时人工评估"
+          }
         },
         {
           "competition": {
@@ -343,7 +385,14 @@
           "term": "flux 3 image",
           "term_cn": "FLUX 3 Image",
           "trends": "下降",
-          "vacuum": 25
+          "vacuum": 25,
+          "sources": [
+            "manual-research"
+          ],
+          "discovered": "2026-10-18",
+          "score_detail": {
+            "note": "2026-10-18 前手工录入（决策堆研究），未经过自动流水线打分；分数为录入时人工评估"
+          }
         },
         {
           "competition": {
@@ -392,7 +441,767 @@
           "term": "nano banana 2",
           "term_cn": "Nano Banana 2",
           "trends": "下降",
-          "vacuum": 30
+          "vacuum": 30,
+          "sources": [
+            "manual-research"
+          ],
+          "discovered": "2026-10-18",
+          "score_detail": {
+            "note": "2026-10-18 前手工录入（决策堆研究），未经过自动流水线打分；分数为录入时人工评估"
+          }
+        },
+        {
+          "term": "muzaimusic",
+          "term_cn": "Muzaimusic",
+          "heat": 475,
+          "heat_delta": "new",
+          "spark": [
+            95,
+            79,
+            45,
+            28,
+            18,
+            18,
+            5
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 55,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 18,
+              "status": "measured",
+              "note": "排名 1000001→315565，上涨"
+            },
+            "demand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 3.2x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-18"
+        },
+        {
+          "term": "pandahead",
+          "term_cn": "Pandahead",
+          "heat": 451,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            32,
+            49,
+            63,
+            78,
+            87,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 55,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 18,
+              "status": "measured",
+              "note": "排名 500030→165256，上涨"
+            },
+            "demand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 3.0x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-18"
+        },
+        {
+          "term": "typesafe",
+          "term_cn": "Typesafe",
+          "heat": 3864,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            20,
+            40,
+            57,
+            72,
+            84,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 54,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "RainbowSea 新上榜",
+              "type": "hot"
+            },
+            {
+              "text": "增长 25.8x",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 24,
+              "status": "measured",
+              "note": "排名 1000001→38818，强势上涨"
+            },
+            "demand": {
+              "score": 17,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 25.8x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "重型 B2B/企业服务，难独立做"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-18"
+        },
+        {
+          "term": "mineos",
+          "term_cn": "Mineos",
+          "heat": 1883,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            21,
+            35,
+            47,
+            63,
+            81,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 54,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "增长 12.6x",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 24,
+              "status": "measured",
+              "note": "排名 1000001→77940，强势上涨"
+            },
+            "demand": {
+              "score": 17,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 12.6x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "重型 B2B/企业服务，难独立做"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-18"
+        },
+        {
+          "term": "muselab",
+          "term_cn": "Muselab",
+          "heat": 409,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            31,
+            52,
+            63,
+            73,
+            84,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 51,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 18,
+              "status": "measured",
+              "note": "排名 922965→325505，上涨"
+            },
+            "demand": {
+              "score": 5,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 2.7x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-18"
+        },
+        {
+          "term": "snappetal",
+          "term_cn": "Snappetal",
+          "heat": 379,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            5,
+            5,
+            46,
+            69,
+            84,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 51,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 18,
+              "status": "measured",
+              "note": "排名 1000001→395611，上涨"
+            },
+            "demand": {
+              "score": 5,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 2.5x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-18"
+        },
+        {
+          "term": "bite-ai",
+          "term_cn": "Bite Ai",
+          "heat": 376,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            48,
+            93,
+            95,
+            88,
+            87,
+            89
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 51,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 18,
+              "status": "measured",
+              "note": "排名 1000001→398722，上涨"
+            },
+            "demand": {
+              "score": 5,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 2.5x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-18"
+        },
+        {
+          "term": "machinegeist",
+          "term_cn": "Machinegeist",
+          "heat": 1584,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            24,
+            39,
+            53,
+            65,
+            84,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 50,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "RainbowSea 新上榜",
+              "type": "hot"
+            },
+            {
+              "text": "增长 10.6x",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 24,
+              "status": "measured",
+              "note": "排名 1000001→94681，强势上涨"
+            },
+            "demand": {
+              "score": 17,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 10.6x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 0,
+              "status": "unknown",
+              "note": "类型不明"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-18"
+        },
+        {
+          "term": "lupapets",
+          "term_cn": "Lupapets",
+          "heat": 1122,
+          "heat_delta": "new",
+          "spark": [
+            95,
+            77,
+            53,
+            51,
+            45,
+            5,
+            12
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 50,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "增长 7.5x",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 24,
+              "status": "measured",
+              "note": "排名 511793→67741，强势上涨"
+            },
+            "demand": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 7.5x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "重型 B2B/企业服务，难独立做"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-18"
         }
       ],
       "label": "AI工具词"
@@ -403,8 +1212,13 @@
       "status": "coming_soon"
     }
   },
-  "updated_at": "2026-10-18T19:31:32.381074+08:00",
+  "updated_at": "2026-10-18T21:01:25.340443+08:00",
   "meta": {
-    "last_rainbowsea_ok": true
+    "last_rainbowsea_ok": true,
+    "last_huggingface_ok": true,
+    "last_trends_monitor_ok": true,
+    "pytrends_available": false,
+    "new_added": 5,
+    "skipped_eliminated": 0
   }
 }
