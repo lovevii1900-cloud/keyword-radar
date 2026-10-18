@@ -122,3 +122,41 @@
 4. 现有词分数**不自动改**（无新实测数据不调整），只刷新 `updated_at`。
 5. 全部来源失败 → 数据保持不变，记日志，不模拟。
 6. git commit 本地，通过 GitHub Contents API 自动 push（custom.github 连接器）。
+
+---
+
+## 游戏词频道数据源（2026-10-18 新增）
+
+### G1. Steam 商店搜索（主来源）
+- **地址**：`https://store.steampowered.com/search/results/?...&filter=topsellers|popularcomingsoon`
+- **提供**：新品榜（Released_DESC 排序）+ 即将发布榜（popularcomingsoon），appid + 名字 slug。
+- **局限**：
+  - 返回的是 JSON 包裹的转义 HTML，需两次 unescape（`\"`→`"`，`\/`→`/`）。
+  - 名字从 URL slug 取，偶有缺空格（如 `CielviaInherited By Defeat`），不影响关键词使用。
+
+### G2. Steam appdetails API
+- **地址**：`https://store.steampowered.com/api/appdetails?appids={单个id}&filters=release_date,genres,short_description`
+- **提供**：发布日期、coming_soon 标记、类型、简介（实测）。
+- **局限**：
+  - **仅支持单个 appid**（多 id 返回 400）；`name` 不在 filters 白名单，用搜索页 slug 名。
+  - 每次 1s 间隔，每天最多查 25 个。
+
+### G3. Google 联想词（攻略需求实测）
+- 对候选游戏名查 `{名} wiki / guide / walkthrough / release date` 联想命中数。
+- 命中 ≥3/4 = 玩家已在搜攻略，建站窗口正在打开；0 命中 = 太早或没人搜。
+
+### 过滤规则（只收最新的）
+- 近 30 天发布，或 coming_soon=true（铺词黄金期）→ 收
+- 30–60 天 → 跳过（除非后续接更新检测）
+- >60 天 → 淘汰
+- 3A 大厂系列（Franchise 黑名单）、成人向 → 跳过
+
+### 游戏评分维度状态
+| 维度 | 权重 | 依据 | 状态 |
+|------|------|------|------|
+| 玩家动量 | 25 | Steam 发布日期/coming_soon | measured |
+| 搜索需求 | 20 | 联想词攻略命中数 | measured |
+| SERP机会 | 20 | 待 OpenSERP | unknown |
+| 机制深度 | 15 | Steam 类型 → 启发式 | heuristic |
+| 工具潜力 | 10 | 类型 → 启发式 | heuristic |
+| 品牌纯净 | 10 | 续作正则 → 启发式 | heuristic |
