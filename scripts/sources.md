@@ -49,22 +49,76 @@
 - **替代**：趋势动量改用 RainbowSea 排名历史（实测数据），见来源 1。
 - **如需恢复**：需走浏览器通道（trends-vacuum-monitor 现有模式）或换网络环境。
 
+## 5. Google Autocomplete（联想词展开）
+
+- **地址**：`https://suggestqueries.google.com/complete/search?client=chrome&q={词}&hl=en&gl=US`
+- **提供**：Google 基于真实搜索数据返回的联想词（无需 key，免费）。
+- **我们用的**：对 data.json 里 top 10 高分词逐个查联想，取比原词更长的长尾（如 `flux 3 image klein` → `flux 3 image klein generator free`）。
+- **关键词派生**：联想词原样收录（空格转连字符），带 `long_tail_of` 指向父词。
+- **评分**：`搜索需求` 按 **measured** 计 18/20——联想词是 Google 根据真实用户搜索返回的，是最接近"有人在搜"的免费信号。
+- **局限**：
+  - 只给词，不给搜索量数字（有词无量）。
+  - 联想词偏向头部热门 query，长尾覆盖不如付费词库。
+  - Google 可能限流：每次间隔 1 秒，每天最多展开 10 个 seed。
+
+## 6. Product Hunt（新品发布）
+
+- **地址**：`https://www.producthunt.com/feed`（Atom，无需 key）
+- **提供**：PH 每日新品榜（标题、发布时间、链接、简介）。
+- **我们用的**：过滤近 7 天发布 + 标题/简介命中 AI 图像/视频/音频关键词的产品；词 = 产品名小写去符号。
+- **局限**：
+  - PH 排名 ≠ 搜索需求：PH 热度是社区投票，很多人搜的不一定上 PH，PH 火的也不一定有人搜。
+  - feed 只给最近一批，7 天窗口外的漏掉。
+  - 产品名多为品牌名，品牌风险需人工复核。
+
+## 7. Hacker News（技术圈热议）
+
+- **地址**：`https://hacker-news.firebaseio.com/v0/topstories.json` + `/v0/item/{id}.json`（免费，无需 key）
+- **提供**：HN top 30 故事（标题、分数、链接）。
+- **我们用的**：只收 `Show HN:` / `Launch HN:` 开头且标题命中 AI 关键词的产品名；普通讨论帖不派生词（标题是句子，噪声大）。
+- **局限**：
+  - 命中率低：top 30 里 AI 产品帖经常只有 0–2 条。
+  - HN 分数反映的是开发者兴趣，不是大众搜索需求。
+  - 每天只看一次 top 30，快帖可能错过。
+
+## 8. GitHub Trending（search API）
+
+- **地址**：`https://api.github.com/search/repositories?q=ai+image+generator+created:>2026-09-03&sort=stars&order=desc`
+- **提供**：近 45 天创建的 AI 图像/视频生成仓库（star 数、描述、推送时间）。未登录每小时 60 次限额，我们只用 2 次。
+- **我们用的**：star ≥ 20 的仓库名派生词。
+- **局限**：
+  - star 反映开发者热度，不是搜索需求；很多高 star 项目是库/框架，不是终端工具。
+  - 仓库名经常是缩写/代号（如 `z-image`），可读性差，需人工判断。
+  - search API 的 `created:` 过滤依赖仓库元数据，不完全准。
+
+## 9. Reddit（不可用）
+
+- **状态**：`https://www.reddit.com/r/StableDiffusion/hot.json` 返回 **HTTP 403**（本 VM IP 被 Reddit 墙）。
+- **如需恢复**：需换 IP / 走浏览器通道，或用 Reddit 官方 API（需注册 app 拿 token，免费但要走 OAuth）。
+- r/artificial、r/StableDiffusion 是 AI 工具讨论最活跃的两个版块，恢复后优先接。
+
+## 10. OpenSERP（暂缓）
+
+- **状态**：开源免费 SERP API，但需**自建服务器**跑（`localhost:7000`），本 VM 暂不部署。
+- **价值**：接上后可把 `SERP真空度` 从 unknown 变成 measured——自动查每个词 Google 前 10，看独立站占比。
+- **后续**：等有空闲服务器或用户批准后再搭。
+
 ## 评分维度状态说明
 
 | 维度 | 权重 | 主要依据 | 状态 |
 |------|------|----------|------|
-| 趋势动量 | 25 | RainbowSea 排名历史首尾比 | measured（有历史）/ heuristic（HF）/ unknown |
-| 搜索需求 | 20 | 来源数 + 增长倍数 | heuristic |
-| SERP真空度 | 20 | trends-monitor 确认结论 | unknown（当前无确认数据） |
-| 可做度 | 15 | 描述关键词（工具类 vs 企业级） | heuristic / unknown |
+| 趋势动量 | 25 | RainbowSea 排名历史首尾比；新源用各自热度信号 | measured（RS 历史）/ heuristic（PH/HN/GH/联想）/ unknown |
+| 搜索需求 | 20 | 来源数 + 增长倍数；**联想词按 measured 计** | measured（联想词）/ heuristic（其他） |
+| SERP真空度 | 20 | trends-monitor 确认结论 | unknown（当前无确认数据；OpenSERP 接入后可转 measured） |
+| 可做度 | 15 | 描述关键词（工具类 vs 企业级）；联想词直接可做内容页 | heuristic / unknown |
 | 变现潜力 | 10 | 描述关键词 | heuristic / unknown |
 | 品牌风险 | 10 | 品牌词表直接匹配 | measured（命中）/ heuristic（未命中） |
 
 ## 每日行为
 
-1. 四个来源各在 try/except 中独立抓取，失败记日志不中断。
+1. 八个可用来源各在 try/except 中独立抓取，失败记日志不中断（Reddit/pytrends 跳过）。
 2. 去重：已存在（不分大小写）或 trends-monitor 已淘汰的跳过。
-3. 新词按总分排序，每天最多加 5 个。
+3. 主源新词按总分排序，每天最多加 5 个；联想词长尾独立预算，最多加 5 个。
 4. 现有词分数**不自动改**（无新实测数据不调整），只刷新 `updated_at`。
 5. 全部来源失败 → 数据保持不变，记日志，不模拟。
-6. git commit 本地，push 需要 `GITHUB_TOKEN`（无则记日志跳过）。
+6. git commit 本地，通过 GitHub Contents API 自动 push（custom.github 连接器）。

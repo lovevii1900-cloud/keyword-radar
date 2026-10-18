@@ -6,12 +6,18 @@
 1. RainbowSea board.json — 每日更新的 rising 新站榜单（AI 分类）
 2. trends-monitor-seen.md — 趋势真空监控的结论（去重 + 真空确认）
 3. HuggingFace Hub API — 新模型（有真实下载/点赞的才算）
-4. Google Trends (pytrends) — 本 VM 直连超时不可用，已在 sources.md 注明；
+4. Google Trends (pytrends) — 本 VM 直连超时不可用；
    趋势动量改用 RainbowSea 自带的排名历史（实测数据）
+5. Google Autocomplete — 对 top 10 高分词做联想词展开，挖真实用户长尾搜索词
+6. Product Hunt Atom feed — 近 7 天发布的 AI 图像/视频/音频工具
+7. Hacker News API — top 30 中 Show HN / Launch HN 的 AI 产品
+8. GitHub Search API — 近 45 天创建的 AI 图像/视频生成仓库（unauthenticated）
+9. Reddit — 403 被墙，不可用
 
 每条关键词必须能追溯到至少一个真实来源（sources 字段）。
 任一来源失败不影响其他来源；全部失败则保持数据不变，只记日志。
-只读采集，请求间隔 2 秒。
+只读采集，Autocomplete 间隔 1 秒，其他间隔 2 秒。
+详见 scripts/sources.md。
 """
 import json
 import os
@@ -68,7 +74,9 @@ def log(msg):
 
 
 def http_get_json(url, timeout=25):
-    req = Request(url, headers=UA)
+    headers = dict(UA)
+    headers['Accept'] = 'application/vnd.github.v3+json, application/json'
+    req = Request(url, headers=headers)
     with urlopen(req, timeout=timeout) as r:
         return json.loads(r.read().decode('utf-8', errors='ignore'))
 
@@ -218,6 +226,189 @@ def fetch_huggingface():
     return result
 
 
+# ---------------- Source 4: Google Autocomplete ----------------
+
+AC_ENDPOINT = 'https://suggestqueries.google.com/complete/search'
+
+def fetch_autocomplete(seed_terms):
+    """对已有高分词做联想词展开。返回 [(long_tail, info)]，info 含 parent。
+    联想词是 Google 基于真实搜索数据返回的 = 实测的需求信号。"""
+    from urllib.parse import quote
+    cands = []
+    for seed in seed_terms[:10]:
+        # seed 可能是 'flux-3-image-klein'，转为空格形式查联想
+        q = seed.replace('-', ' ').strip()
+        if not q:
+            continue
+        try:
+            url = f"{AC_ENDPOINT}?client=chrome&q={quote(q)}&hl=en&gl=US"
+            req = Request(url, headers=UA)
+            with urlopen(req, timeout=15) as r:
+                data = json.loads(r.read().decode('utf-8', errors='ignore'))
+            suggestions = data[1] if len(data) > 1 else []
+            for s in suggestions:
+                s = s.strip().lower()
+                # 只要比 seed 更长的长尾；太长/太短的不要
+                if len(s) <= len(q) or len(s) > 60 or len(s.split()) > 8:
+                    continue
+                # 必须包含 seed 原词（防 Google 模糊纠错串到别的词，如 magnific one → magnificent one）
+                if q not in s:
+                    continue
+                if any(h in s for h in ADULT_HINTS):
+                    continue
+                # 规范化：空格转连字符，与现有 term 格式统一
+                term = re.sub(r'[^a-z0-9]+', '-', s).strip('-')
+                if not term or len(term) < 5:
+                    continue
+                cands.append((term, {'parent': seed, 'raw': s}))
+        except Exception as e:
+            log(f"Autocomplete '{q}' failed: {e}")
+        time.sleep(1)
+    seen = set()
+    result = []
+    for term, info in cands:
+        if term not in seen:
+            seen.add(term)
+            result.append((term, info))
+    log(f"Autocomplete long-tails: {len(result)}")
+    return result
+
+
+# ---------------- Source 5: Product Hunt ----------------
+
+def fetch_producthunt():
+    """解析 PH Atom feed，取近 7 天发布的 AI 图像/视频/音频工具。"""
+    try:
+        req = Request('https://www.producthunt.com/feed', headers=UA)
+        with urlopen(req, timeout=25) as r:
+            xml = r.read().decode('utf-8', errors='ignore')
+    except Exception as e:
+        log(f"ProductHunt feed failed: {e}")
+        return None
+    entries = re.findall(r'<entry>(.*?)</entry>', xml, re.S)
+    now = datetime.now(BJ)
+    ai_pat = re.compile(
+        r'\b(ai|gpt|image generat|video generat|text-to-image|text-to-video|'
+        r'diffusion|avatar|headshot|upscal|photo enhanc|voice|music generat|'
+        r'podcast|talking head)\b', re.I)
+    cands = []
+    for e in entries:
+        m_title = re.search(r'<title>(.*?)</title>', e, re.S)
+        m_pub = re.search(r'<published>(.*?)</published>', e)
+        m_link = re.search(r'href="(https://www\.producthunt\.com/products/[^"]+)"', e)
+        m_content = re.search(r'<content[^>]*>(.*?)</content>', e, re.S)
+        if not m_title:
+            continue
+        title = re.sub(r'<[^>]+>', '', m_title.group(1)).strip()
+        desc = re.sub(r'<[^>]+>', '', m_content.group(1)).strip() if m_content else ''
+        # 7 天过滤
+        if m_pub:
+            try:
+                pub_dt = datetime.fromisoformat(m_pub.group(1).replace('Z', '+00:00'))
+                if (now - pub_dt.astimezone(BJ)).days > 7:
+                    continue
+            except Exception:
+                pass
+        if not ai_pat.search(title + ' ' + desc):
+            continue
+        term = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
+        if not term or len(term) < 3 or len(term) > 40 or any(h in term for h in ADULT_HINTS):
+            continue
+        cands.append((term, {
+            'ph_title': title,
+            'ph_url': m_link.group(1) if m_link else '',
+            'desc': desc[:300],
+            'published': m_pub.group(1)[:10] if m_pub else '',
+        }))
+    log(f"ProductHunt AI candidates: {len(cands)}")
+    return cands
+
+
+# ---------------- Source 6: Hacker News ----------------
+
+def fetch_hackernews():
+    """top 30 故事；只收 Show HN / Launch HN 的 AI 产品（标题派生，噪声可控）。"""
+    try:
+        ids = http_get_json('https://hacker-news.firebaseio.com/v0/topstories.json', timeout=20)
+    except Exception as e:
+        log(f"HackerNews topstories failed: {e}")
+        return None
+    ai_pat = re.compile(
+        r'\b(ai|gpt|llm|diffusion|image generat|video generat|text-to-|'
+        r'stable diffusion|midjourney|flux|agent)\b', re.I)
+    show_pat = re.compile(r'^(Show HN|Launch HN)\s*:\s*(.+?)(?:\s+[–—-]\s+|\s+\(|\s*$)', re.I)
+    cands = []
+    for sid in (ids or [])[:30]:
+        try:
+            item = http_get_json(
+                f'https://hacker-news.firebaseio.com/v0/item/{sid}.json', timeout=15)
+        except Exception:
+            continue
+        title = item.get('title', '') or ''
+        if not ai_pat.search(title):
+            time.sleep(0.5)
+            continue
+        m = show_pat.match(title)
+        if not m:  # 非产品发布类标题不派生词（噪声大）
+            time.sleep(0.5)
+            continue
+        term = re.sub(r'[^a-z0-9]+', '-', m.group(2).strip().lower()).strip('-')
+        if not term or len(term) < 3 or len(term) > 40 or any(h in term for h in ADULT_HINTS):
+            time.sleep(0.5)
+            continue
+        cands.append((term, {
+            'hn_title': title,
+            'hn_score': item.get('score', 0),
+            'hn_url': f'https://news.ycombinator.com/item?id={sid}',
+            'desc': title,
+        }))
+        time.sleep(0.5)
+    log(f"HackerNews AI candidates: {len(cands)}")
+    return cands
+
+
+# ---------------- Source 7: GitHub Trending (search API) ----------------
+
+def fetch_github_trending():
+    """近 45 天创建的 AI 图像/视频生成仓库（unauthenticated，每小时 60 次限额，只用 2 次）。"""
+    cands = []
+    any_ok = False
+    for q in ['ai+image+generator', 'text-to-video+ai']:
+        url = (f"https://api.github.com/search/repositories"
+               f"?q={q}+created:%3E2026-09-03&sort=stars&order=desc&per_page=15")
+        try:
+            data = http_get_json(url, timeout=25)
+            any_ok = True
+        except Exception as e:
+            log(f"GitHub search '{q}' failed: {e}")
+            continue
+        for repo in data.get('items', []):
+            name = (repo.get('name', '') or '').lower()
+            stars = repo.get('stargazers_count', 0) or 0
+            if stars < 20:
+                continue
+            term = re.sub(r'[^a-z0-9]+', '-', name).strip('-')
+            if not term or len(term) < 3 or len(term) > 40 or any(h in term for h in ADULT_HINTS):
+                continue
+            if re.fullmatch(r'[v0-9.\-]+', term):
+                continue
+            cands.append((term, {
+                'repo': repo.get('full_name', ''),
+                'stars': stars,
+                'desc': (repo.get('description', '') or '')[:300],
+                'pushed': (repo.get('pushed_at', '') or '')[:10],
+                'url': repo.get('html_url', ''),
+            }))
+        time.sleep(2)
+    seen = {}
+    for term, info in cands:
+        if term not in seen or info['stars'] > seen[term]['stars']:
+            seen[term] = info
+    result = list(seen.items())
+    log(f"GitHub trending candidates: {len(result)}")
+    return result if any_ok else None
+
+
 # ---------------- Scoring ----------------
 
 def score_keyword(term, src_info):
@@ -249,6 +440,29 @@ def score_keyword(term, src_info):
             dims['trend'] = (12, 'heuristic', f'下载 {dls}，有热度（无历史曲线）')
         else:
             dims['trend'] = (8, 'heuristic', f'点赞 {info.get("likes", 0)}（无历史曲线）')
+    elif src == 'google-autocomplete':
+        # 联想词本身 = Google 基于真实搜索返回，趋势给中等启发式分
+        dims['trend'] = (12, 'heuristic',
+                         f'Google 联想词（父词 {info.get("parent", "")}），真实搜索派生')
+    elif src == 'producthunt':
+        pub = info.get('published', '')
+        dims['trend'] = (12, 'heuristic', f'PH 近 7 天发布（{pub}），新品热度')
+    elif src == 'hackernews':
+        sc = info.get('hn_score', 0)
+        if sc >= 200:
+            dims['trend'] = (16, 'heuristic', f'HN {sc} 分，技术圈热议')
+        elif sc >= 50:
+            dims['trend'] = (11, 'heuristic', f'HN {sc} 分')
+        else:
+            dims['trend'] = (7, 'heuristic', f'HN {sc} 分，热度一般')
+    elif src == 'github-trending':
+        stars = info.get('stars', 0)
+        if stars >= 500:
+            dims['trend'] = (15, 'heuristic', f'GitHub {stars} stars，开发者热捧')
+        elif stars >= 100:
+            dims['trend'] = (11, 'heuristic', f'GitHub {stars} stars')
+        else:
+            dims['trend'] = (7, 'heuristic', f'GitHub {stars} stars，刚起量')
     else:
         dims['trend'] = (0, 'unknown', '无趋势数据源')
 
@@ -266,8 +480,14 @@ def score_keyword(term, src_info):
     else:
         base = 4  # HF / trends-monitor 来源无 gm
     demand = min(20, base + (3 if n_src >= 2 else 0) + (2 if n_src >= 3 else 0))
-    dims['demand'] = (demand, 'heuristic',
-                      f'{n_src} 个来源提及' + (f'，增长 {gm:.1f}x' if gm else ''))
+    if src == 'google-autocomplete':
+        # 联想词 = 用户真实键入的搜索词，需求维度按实测计高分
+        demand = 18
+        dims['demand'] = (demand, 'measured',
+                          f'Google 联想返回的真实用户搜索词（父词 {info.get("parent", "")}）')
+    else:
+        dims['demand'] = (demand, 'heuristic',
+                          f'{n_src} 个来源提及' + (f'，增长 {gm:.1f}x' if gm else ''))
 
     # 3. SERP 真空度 20 — 只有 trends-monitor 确认才算实测，否则 unknown
     if src_info.get('vacuum_confirmed'):
@@ -283,6 +503,12 @@ def score_keyword(term, src_info):
         dims['buildable'] = (4, 'heuristic', '重型 B2B/企业服务，难独立做')
     elif src == 'huggingface':
         dims['buildable'] = (10, 'heuristic', '新模型名，可做内容页/评测页')
+    elif src == 'google-autocomplete':
+        dims['buildable'] = (13, 'heuristic', '真实用户长尾搜索词，直接可做内容页')
+    elif src in ('producthunt', 'github-trending'):
+        dims['buildable'] = (10, 'heuristic', '新工具/新仓库，可做内容页或对标页')
+    elif src == 'hackernews':
+        dims['buildable'] = (8, 'heuristic', 'HN 热议产品，可做内容页')
     else:
         dims['buildable'] = (0, 'unknown', '类型不明')
 
@@ -349,6 +575,14 @@ def build_entry(term, src_info, total, dims):
         tags.append({'text': f'增长 {gm:.1f}x', 'type': 'hot'})
     if src == 'huggingface':
         tags.append({'text': 'HF 新模型', 'type': 'hot'})
+    if src == 'google-autocomplete':
+        tags.append({'text': 'Google 联想词', 'type': 'hot'})
+    if src == 'producthunt':
+        tags.append({'text': 'PH 新品', 'type': 'hot'})
+    if src == 'hackernews':
+        tags.append({'text': f'HN {info.get("hn_score", 0)}分', 'type': 'hot'})
+    if src == 'github-trending':
+        tags.append({'text': f'GH {info.get("stars", 0)}★', 'type': 'hot'})
     tags.append({'text': 'AI工具', 'type': 'cat'})
     if dims['vacuum'][1] == 'unknown':
         tags.append({'text': '真空待查', 'type': 'warn'})
@@ -356,7 +590,7 @@ def build_entry(term, src_info, total, dims):
     # term_cn：首字母大写展示
     term_cn = ' '.join(w.capitalize() for w in term.split('-')).replace('-', ' ')
 
-    return {
+    entry = {
         'term': term,
         'term_cn': term_cn,
         'heat': heat,
@@ -381,6 +615,10 @@ def build_entry(term, src_info, total, dims):
         },
         'discovered': datetime.now(BJ).strftime('%Y-%m-%d'),
     }
+    # 长尾词关联父词
+    if info.get('parent'):
+        entry['long_tail_of'] = info['parent']
+    return entry
 
 
 # ---------------- Main ----------------
@@ -435,6 +673,41 @@ def main():
     # Source 4: pytrends — 本 VM 不可用（见 sources.md）
     ok_sources['pytrends'] = False
 
+    # Source 5: Product Hunt（近 7 天 AI 工具新品）
+    ph = fetch_producthunt()
+    ok_sources['producthunt'] = ph is not None
+    if ph:
+        for term, info in ph:
+            candidates.setdefault(term, {'sources': [], 'primary': 'producthunt', 'data': {}})
+            if 'producthunt' not in candidates[term]['sources']:
+                candidates[term]['sources'].append('producthunt')
+            candidates[term]['data'].update(info)
+    time.sleep(2)
+
+    # Source 6: Hacker News（Show HN / Launch HN 的 AI 产品）
+    hn = fetch_hackernews()
+    ok_sources['hackernews'] = hn is not None
+    if hn:
+        for term, info in hn:
+            candidates.setdefault(term, {'sources': [], 'primary': 'hackernews', 'data': {}})
+            if 'hackernews' not in candidates[term]['sources']:
+                candidates[term]['sources'].append('hackernews')
+            candidates[term]['data'].update(info)
+    time.sleep(1)
+
+    # Source 7: GitHub Trending（近 45 天 AI 图像/视频仓库）
+    ght = fetch_github_trending()
+    ok_sources['github_trending'] = ght is not None
+    if ght:
+        for term, info in ght:
+            candidates.setdefault(term, {'sources': [], 'primary': 'github-trending', 'data': {}})
+            if 'github-trending' not in candidates[term]['sources']:
+                candidates[term]['sources'].append('github-trending')
+            candidates[term]['data'].update(info)
+
+    # Source 8: Reddit — 403 被墙，不可用（见 sources.md）
+    ok_sources['reddit'] = False
+
     if not any(ok_sources.values()):
         log("ALL sources failed — keeping existing data unchanged")
         return 1
@@ -445,7 +718,7 @@ def main():
 
     added = 0
     skipped_elim = 0
-    # 按分数排序后取前 5
+    # 按分数排序后取前 5（主源：新工具/新模型/新品）
     scored = []
     for term, src_info in candidates.items():
         if term.lower() in existing:
@@ -463,13 +736,44 @@ def main():
         added += 1
         log(f"NEW: {term} score={total} sources={entry['sources']}")
 
+    # Source 9: Google Autocomplete 长尾展开（独立预算 max 5）
+    # 用当前 top 10 高分词做 seed，挖真实用户长尾搜索词
+    existing.update(kw['term'].lower() for kw in kws)
+    seeds = sorted(kws, key=lambda k: k.get('score', 0), reverse=True)[:10]
+    seed_terms = [kw['term'] for kw in seeds]
+    ac = fetch_autocomplete(seed_terms)
+    ok_sources['autocomplete'] = ac is not None
+    ac_added = 0
+    if ac:
+        ac_scored = []
+        for term, info in ac:
+            if term.lower() in existing or term.lower() in eliminated:
+                continue
+            src_info = {'sources': ['google-autocomplete'], 'primary': 'google-autocomplete',
+                        'data': info}
+            total, dims = score_keyword(term, src_info)
+            ac_scored.append((total, term, src_info, dims))
+        ac_scored.sort(reverse=True, key=lambda x: x[0])
+        for total, term, src_info, dims in ac_scored[:5]:
+            entry = build_entry(term, src_info, total, dims)
+            kws.append(entry)
+            existing.add(term.lower())
+            ac_added += 1
+            log(f"NEW long-tail: {term} score={total} parent={src_info['data'].get('parent')}")
+    added += ac_added
+
     # 现有词：保留分数（无新实测数据不做调整），只刷新时间
     data['updated_at'] = datetime.now(BJ).isoformat()
     meta = data.setdefault('meta', {})
     meta['last_rainbowsea_ok'] = ok_sources['rainbowsea']
     meta['last_huggingface_ok'] = ok_sources['huggingface']
     meta['last_trends_monitor_ok'] = ok_sources['trends_monitor']
+    meta['last_producthunt_ok'] = ok_sources.get('producthunt')
+    meta['last_hackernews_ok'] = ok_sources.get('hackernews')
+    meta['last_github_trending_ok'] = ok_sources.get('github_trending')
+    meta['last_autocomplete_ok'] = ok_sources.get('autocomplete')
     meta['pytrends_available'] = False
+    meta['reddit_available'] = False
     meta['new_added'] = added
     meta['skipped_eliminated'] = skipped_elim
 
