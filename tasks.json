@@ -1,0 +1,89 @@
+{
+  "tasks": [
+    {
+      "id": "new_page-flux-3-image-klein-20261018",
+      "type": "new_page",
+      "term": "flux 3 image klein",
+      "term_cn": "FLUX 3 Image Klein",
+      "priority": 72,
+      "status": "pending",
+      "action": "新建内容页 targeting 'flux 3 image klein'（标题含FLUX 3 Image Klein）：用 HowTo/对比结构 + FAQ Schema，一天可出，上线后提交 GSC 收录",
+      "created_at": "2026-10-18T20:10:40.861778+08:00",
+      "updated_at": "2026-10-18T20:10:40.861778+08:00",
+      "draft": null
+    },
+    {
+      "id": "new_page-magnific-one-20261018",
+      "type": "new_page",
+      "term": "magnific one",
+      "term_cn": "Magnific One",
+      "priority": 65,
+      "status": "pending",
+      "action": "新建内容页 targeting 'magnific one'（标题含Magnific One）：用 HowTo/对比结构 + FAQ Schema，一天可出，上线后提交 GSC 收录",
+      "created_at": "2026-10-18T20:10:40.861778+08:00",
+      "updated_at": "2026-10-18T20:10:40.861778+08:00",
+      "draft": null
+    },
+    {
+      "id": "watch-gpt-image-2.5-20261018",
+      "type": "watch",
+      "term": "gpt image 2.5",
+      "term_cn": "GPT Image 2.5",
+      "priority": 58,
+      "status": "pending",
+      "action": "跟踪 'gpt image 2.5' 趋势 3 天：热度持续上涨则转建页，下跌则关闭任务",
+      "created_at": "2026-10-18T20:10:40.861778+08:00",
+      "updated_at": "2026-10-18T20:10:40.861778+08:00",
+      "draft": null
+    },
+    {
+      "id": "watch-krea-2-20261018",
+      "type": "watch",
+      "term": "krea 2",
+      "term_cn": "Krea 2",
+      "priority": 55,
+      "status": "pending",
+      "action": "跟踪 'krea 2' 趋势 3 天：热度持续上涨则转建页，下跌则关闭任务",
+      "created_at": "2026-10-18T20:10:40.861778+08:00",
+      "updated_at": "2026-10-18T20:10:40.861778+08:00",
+      "draft": null
+    },
+    {
+      "id": "watch-qwen-image-2.1-20261018",
+      "type": "watch",
+      "term": "qwen image 2.1",
+      "term_cn": "Qwen-Image 2.1",
+      "priority": 52,
+      "status": "pending",
+      "action": "跟踪 'qwen image 2.1' 趋势 3 天：热度持续上涨则转建页，下跌则关闭任务",
+      "created_at": "2026-10-18T20:10:40.861778+08:00",
+      "updated_at": "2026-10-18T20:10:40.861778+08:00",
+      "draft": null
+    },
+    {
+      "id": "watch-nano-banana-2-20261018",
+      "type": "watch",
+      "term": "nano banana 2",
+      "term_cn": "Nano Banana 2",
+      "priority": 45,
+      "status": "pending",
+      "action": "跟踪 'nano banana 2' 趋势 3 天：热度持续上涨则转建页，下跌则关闭任务",
+      "created_at": "2026-10-18T20:10:40.861778+08:00",
+      "updated_at": "2026-10-18T20:10:40.861778+08:00",
+      "draft": null
+    },
+    {
+      "id": "watch-flux-3-image-20261018",
+      "type": "watch",
+      "term": "flux 3 image",
+      "term_cn": "FLUX 3 Image",
+      "priority": 40,
+      "status": "pending",
+      "action": "跟踪 'flux 3 image' 趋势 3 天：热度持续上涨则转建页，下跌则关闭任务",
+      "created_at": "2026-10-18T20:10:40.861778+08:00",
+      "updated_at": "2026-10-18T20:10:40.861778+08:00",
+      "draft": null
+    }
+  ],
+  "updated_at": "2026-10-18T20:10:40.861778+08:00"
+}
