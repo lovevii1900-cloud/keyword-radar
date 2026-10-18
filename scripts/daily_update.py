@@ -482,6 +482,9 @@ def main():
 
 
 def git_commit_push():
+    """Push data.json via GitHub Contents API using the stored connector credential.
+    Falls back to local git commit if the API path is unavailable."""
+    # Local commit first (keeps repo history consistent)
     os.chdir(REPO_DIR)
     r = subprocess.run(['git', 'status', '--porcelain'], capture_output=True, text=True)
     if not r.stdout.strip():
@@ -490,13 +493,53 @@ def git_commit_push():
     subprocess.run(['git', 'add', 'data.json'], check=True)
     day = datetime.now(BJ).strftime('%Y-%m-%d')
     subprocess.run(['git', 'commit', '-m', f'Data: real radar update {day}'], check=True)
+    # Push via GitHub API (Contents endpoint) — no plaintext token needed
+    try:
+        ok = _push_via_api('data.json', f'Data: real radar update {day}')
+        if ok:
+            log("Pushed to GitHub via API (Cloudflare Pages will auto-deploy)")
+            return 0
+        log("API push failed, trying git push as fallback")
+    except Exception as e:
+        log(f"API push error: {e}, trying git push as fallback")
     r = subprocess.run(['git', 'push', 'origin', 'main'], capture_output=True, text=True)
     if r.returncode != 0:
         log(f"git push failed: {r.stderr[:300]}")
-        log("HINT: set GITHUB_TOKEN env or configure git credential helper")
         return 1
     log("Pushed to GitHub (Cloudflare Pages will auto-deploy)")
     return 0
+
+
+def _push_via_api(path, message):
+    """Update a repo file via GitHub Contents API using the custom.github connector."""
+    import base64
+    import urllib.request
+    sys.path.insert(0, "/opt/muse/skills/custom-connector-setup/bin")
+    from dynamic_credentials import add_surrogate_to_request, read_json_response
+
+    owner, repo, branch = "lovevii1900-cloud", "keyword-radar", "main"
+    base = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}"
+
+    class NoRedirect(urllib.request.HTTPRedirectHandler):
+        def redirect_request(self, *args):
+            raise RuntimeError("redirect refused")
+
+    opener = urllib.request.build_opener(NoRedirect())
+    # 1. Get current SHA
+    req = urllib.request.Request(f"{base}?ref={branch}")
+    add_surrogate_to_request(req, "custom.github", allowed_hosts=["api.github.com"])
+    with opener.open(req, timeout=30) as resp:
+        sha = read_json_response(resp)["sha"]
+    # 2. Push new content
+    with open(os.path.join(REPO_DIR, path), 'rb') as f:
+        content = base64.b64encode(f.read()).decode()
+    body = json.dumps({"message": message, "content": content, "sha": sha, "branch": branch}).encode()
+    req = urllib.request.Request(base, data=body, method="PUT",
+                                 headers={"Content-Type": "application/json"})
+    add_surrogate_to_request(req, "custom.github", allowed_hosts=["api.github.com"])
+    with opener.open(req, timeout=30) as resp:
+        result = read_json_response(resp)
+        return bool(result.get("commit"))
 
 
 if __name__ == '__main__':
