@@ -6267,6 +6267,857 @@
           },
           "discovered": "2026-10-21",
           "long_tail_of": "krea 2"
+        },
+        {
+          "term": "imagination-studio-by-keys-wasserman",
+          "term_cn": "Imagination Studio By Keys Wasserman",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 43,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "GH 168★",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "github-trending"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 11,
+              "status": "heuristic",
+              "note": "GitHub 168 stars"
+            },
+            "demand": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "1 个来源提及"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-22"
+        },
+        {
+          "term": "paul-kaik",
+          "term_cn": "Paul Kaik",
+          "heat": 540,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            26,
+            44,
+            59,
+            71,
+            83,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 42,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 24,
+              "status": "measured",
+              "note": "排名 1000001→277273，强势上涨"
+            },
+            "demand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 3.6x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 0,
+              "status": "unknown",
+              "note": "类型不明"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-22"
+        },
+        {
+          "term": "minimax-h3-pdd-comfyui",
+          "term_cn": "Minimax H3 Pdd Comfyui",
+          "heat": 584,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "新发现",
+          "vacuum": 0,
+          "score": 40,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "HF 新模型",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "huggingface"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "下载 29225，有热度（无历史曲线）"
+            },
+            "demand": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "1 个来源提及"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 10,
+              "status": "heuristic",
+              "note": "新模型名，可做内容页/评测页"
+            },
+            "monetize": {
+              "score": 5,
+              "status": "heuristic",
+              "note": "模型名主要吃内容/评测流量"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-22"
+        },
+        {
+          "term": "ai-short-drama-studio",
+          "term_cn": "Ai Short Drama Studio",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 39,
+          "score_label": "暂缓",
+          "tags": [
+            {
+              "text": "GH 30★",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "待核查"
+          },
+          "sources": [
+            "github-trending"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "GitHub 30 stars，刚起量"
+            },
+            "demand": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "1 个来源提及"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-22"
+        },
+        {
+          "term": "avatar-speak-pro-download",
+          "term_cn": "Avatar Speak Pro Download",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 39,
+          "score_label": "暂缓",
+          "tags": [
+            {
+              "text": "GH 22★",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "待核查"
+          },
+          "sources": [
+            "github-trending"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "GitHub 22 stars，刚起量"
+            },
+            "demand": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "1 个来源提及"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-22"
+        },
+        {
+          "term": "krea-2-loras",
+          "term_cn": "Krea 2 Loras",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 krea 2），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 krea 2）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-22",
+          "long_tail_of": "krea 2"
+        },
+        {
+          "term": "krea-2-comfyui",
+          "term_cn": "Krea 2 Comfyui",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 krea 2），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 krea 2）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-22",
+          "long_tail_of": "krea 2"
+        },
+        {
+          "term": "krea-2-raw",
+          "term_cn": "Krea 2 Raw",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 krea 2），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 krea 2）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-22",
+          "long_tail_of": "krea 2"
+        },
+        {
+          "term": "krea-2-image-to-image",
+          "term_cn": "Krea 2 Image To Image",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 krea 2），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 krea 2）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-22",
+          "long_tail_of": "krea 2"
+        },
+        {
+          "term": "krea-2-turbo-lora",
+          "term_cn": "Krea 2 Turbo Lora",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 krea 2），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 krea 2）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-22",
+          "long_tail_of": "krea 2"
         }
       ],
       "label": "AI工具词"
@@ -7350,6 +8201,358 @@
           "release_date": "Oct 20, 2026"
         },
         {
+          "term": "horror-tales-eats-the-world",
+          "term_cn": "Horror Tales Eats The World",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure/simulation，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-21",
+          "steam_appid": "3670730",
+          "release_date": "Oct 20, 2026"
+        },
+        {
+          "term": "woim",
+          "term_cn": "Woim",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure/strategy，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-21",
+          "steam_appid": "4272020",
+          "release_date": "Oct 21, 2026"
+        },
+        {
+          "term": "gemcraft-legacy-collection",
+          "term_cn": "Gemcraft Legacy Collection",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 strategy，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-21",
+          "steam_appid": "4207990",
+          "release_date": "Oct 21, 2026"
+        },
+        {
+          "term": "inkys-sleep",
+          "term_cn": "Inkys Sleep",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-21",
+          "steam_appid": "3996640",
+          "release_date": "Oct 21, 2026"
+        },
+        {
           "term": "burg-tag",
           "term_cn": "Burg Tag",
           "heat": 200,
@@ -7612,13 +8815,101 @@
           "discovered": "2026-10-20",
           "steam_appid": "4578110",
           "release_date": "Oct 20, 2026"
+        },
+        {
+          "term": "dearbnb",
+          "term_cn": "Dearbnb",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 47,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "类型 casual/early access/indie，中等深度"
+            },
+            "tool": {
+              "score": 5,
+              "status": "heuristic",
+              "note": "可做攻略内容页"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-21",
+          "steam_appid": "4338180",
+          "release_date": "Oct 21, 2026"
         }
       ],
       "label": "游戏词",
       "status": "live"
     }
   },
-  "updated_at": "2026-10-21T08:38:27.713600+08:00",
+  "updated_at": "2026-10-22T08:39:09.398503+08:00",
   "meta": {
     "last_rainbowsea_ok": true,
     "last_huggingface_ok": true,
