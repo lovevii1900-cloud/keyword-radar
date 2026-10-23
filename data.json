@@ -7976,6 +7976,312 @@
     "games": {
       "keywords": [
         {
+          "term": "break-and-steal-an-egg",
+          "term_cn": "Break and Steal an Egg",
+          "heat": 974,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "Roblox 新游",
+          "vacuum": 1,
+          "score": 78,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "Roblox",
+              "type": "cat"
+            },
+            {
+              "text": "创建 48 天",
+              "type": "hot"
+            },
+            {
+              "text": "真空 0/0",
+              "type": "hot"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Roblox 新游：在玩 57,489；独立站 未发现；Fandom 数据库 无",
+            "level": "有机会"
+          },
+          "sources": [
+            "roblox-explore",
+            "roblox-games-api",
+            "fandom-check",
+            "bing-check"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 24,
+              "status": "measured",
+              "note": "实时在玩 57,489，创建 48 天"
+            },
+            "demand": {
+              "score": 12,
+              "status": "measured",
+              "note": "1/4 攻略类联想命中｜相对量级 ×0.25（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 17,
+              "status": "measured",
+              "note": "独立站 0 · Fandom 数据库 0，真空"
+            },
+            "depth": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "类型 All，中等深度"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "有 codes 搜索需求，适合做 codes/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-24",
+          "roblox_universe_id": "10765288803",
+          "playing_now": 57489,
+          "release_date": "Sep 06, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.25,
+            "candidate_breadth": 15,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
+        {
+          "term": "steal-an-egg",
+          "term_cn": "Steal An Egg",
+          "heat": 1300,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "Roblox 新游",
+          "vacuum": 0,
+          "score": 77,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "Roblox",
+              "type": "cat"
+            },
+            {
+              "text": "创建 91 天",
+              "type": "hot"
+            },
+            {
+              "text": "攻略需求 4/4",
+              "type": "hot"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Roblox 新游：在玩 868,309；独立站 未发现；Fandom 数据库 有",
+            "level": "有机会"
+          },
+          "sources": [
+            "roblox-explore",
+            "roblox-games-api",
+            "fandom-check",
+            "bing-check"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 24,
+              "status": "measured",
+              "note": "实时在玩 868,309，创建 91 天"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "4/4 攻略类联想命中：steal an egg codes roblox, steal an egg codes fortnite｜相对量级 ×0.98（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 10,
+              "status": "measured",
+              "note": "Fandom 已有数据库，独立站未发现"
+            },
+            "depth": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "类型 All，中等深度"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "有 codes 搜索需求，适合做 codes/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-24",
+          "roblox_universe_id": "10563114921",
+          "playing_now": 868309,
+          "release_date": "Jul 25, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.983,
+            "candidate_breadth": 59,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
+        {
+          "term": "anime-dice",
+          "term_cn": "Anime Dice",
+          "heat": 1300,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "Roblox 新游",
+          "vacuum": 0,
+          "score": 77,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "Roblox",
+              "type": "cat"
+            },
+            {
+              "text": "创建 70 天",
+              "type": "hot"
+            },
+            {
+              "text": "攻略需求 4/4",
+              "type": "hot"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Roblox 新游：在玩 73,551；独立站 未发现；Fandom 数据库 有",
+            "level": "有机会"
+          },
+          "sources": [
+            "roblox-explore",
+            "roblox-games-api",
+            "fandom-check",
+            "bing-check"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 24,
+              "status": "measured",
+              "note": "实时在玩 73,551，创建 70 天"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "4/4 攻略类联想命中：anime dice codes 2026, anime dice codes today｜相对量级 ×0.67（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 10,
+              "status": "measured",
+              "note": "Fandom 已有数据库，独立站未发现"
+            },
+            "depth": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "类型 All，中等深度"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "有 codes 搜索需求，适合做 codes/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-24",
+          "roblox_universe_id": "10708913337",
+          "playing_now": 73551,
+          "release_date": "Aug 15, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.667,
+            "candidate_breadth": 40,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
+        {
           "term": "big-dig",
           "term_cn": "Big Dig",
           "heat": 650,
@@ -8436,6 +8742,98 @@
           "release_date": "Oct 20, 2026"
         },
         {
+          "term": "moon-sweepers",
+          "term_cn": "Moon Sweepers",
+          "heat": 800,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 71,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "攻略需求 4/4",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "有机会"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "4/4 攻略类联想命中：moon sweepers, moon sweepers"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure/simulation/strategy，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-23",
+          "steam_appid": "5335510",
+          "release_date": "Oct 23, 2026"
+        },
+        {
           "term": "blue-ridge-hunting",
           "term_cn": "Blue Ridge Hunting",
           "heat": 500,
@@ -8610,6 +9008,270 @@
           "discovered": "2026-10-22",
           "steam_appid": "1713730",
           "release_date": "Oct 22, 2026"
+        },
+        {
+          "term": "hubble-bubble",
+          "term_cn": "Hubble Bubble",
+          "heat": 500,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 65,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "有机会"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 12,
+              "status": "measured",
+              "note": "2/4 攻略类联想命中"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-23",
+          "steam_appid": "5013160",
+          "release_date": "Oct 23, 2026"
+        },
+        {
+          "term": "life-of-a-thug",
+          "term_cn": "Life Of A Thug",
+          "heat": 350,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 65,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "有机会"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 12,
+              "status": "measured",
+              "note": "1/4 攻略类联想命中"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 rpg/simulation，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-23",
+          "steam_appid": "2948130",
+          "release_date": "Oct 23, 2026"
+        },
+        {
+          "term": "under-canopies",
+          "term_cn": "Under Canopies",
+          "heat": 350,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 65,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "有机会"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 12,
+              "status": "measured",
+              "note": "1/4 攻略类联想命中"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure/simulation，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-23",
+          "steam_appid": "2939510",
+          "release_date": "Oct 23, 2026"
         },
         {
           "term": "chess-three-kingdom",
@@ -9756,6 +10418,94 @@
           "release_date": "Oct 22, 2026"
         },
         {
+          "term": "death-rabbit",
+          "term_cn": "Death Rabbit",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure/rpg/strategy，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-23",
+          "steam_appid": "2567780",
+          "release_date": "Oct 22, 2026"
+        },
+        {
           "term": "burg-tag",
           "term_cn": "Burg Tag",
           "heat": 200,
@@ -10200,7 +10950,7 @@
       "status": "live"
     }
   },
-  "updated_at": "2026-10-23T08:38:18.774116+08:00",
+  "updated_at": "2026-10-24T05:45:11.076140+08:00",
   "meta": {
     "last_rainbowsea_ok": true,
     "last_huggingface_ok": true,
