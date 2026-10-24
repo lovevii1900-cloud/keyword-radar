@@ -1,3 +1,16 @@
 {
-  "drafts": []
+  "drafts": [
+    {
+      "slug": "canva-craft",
+      "term": "canva craft",
+      "term_cn": "Canva Craft",
+      "task_id": "new_page-canva-craft-20261023",
+      "priority": 65,
+      "created_at": "2026-10-23T22:44:07.526829+08:00",
+      "status": "published",
+      "file": "drafts/canva-craft.html",
+      "reviewed_at": "2026-10-23T22:49:07+08:00",
+      "published_url": "https://modelpixlab.com/canva-craft/"
+    }
+  ]
 }
