@@ -12261,12 +12261,961 @@
           },
           "discovered": "2026-10-28",
           "long_tail_of": "ashna"
+        },
+        {
+          "term": "promptkhajana",
+          "term_cn": "Promptkhajana",
+          "heat": 378,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            23,
+            39,
+            54,
+            70,
+            83,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "小涨",
+          "vacuum": 0,
+          "score": 51,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 18,
+              "status": "measured",
+              "note": "排名 640355→327131，上涨"
+            },
+            "demand": {
+              "score": 5,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 2.5x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-29"
+        },
+        {
+          "term": "qwen-image",
+          "term_cn": "Qwen Image",
+          "heat": 2129,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "新发现",
+          "vacuum": 0,
+          "score": 46,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "HF 新模型",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "huggingface"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 18,
+              "status": "heuristic",
+              "note": "下载 106478，热度高（无历史曲线）"
+            },
+            "demand": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "1 个来源提及"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 10,
+              "status": "heuristic",
+              "note": "新模型名，可做内容页/评测页"
+            },
+            "monetize": {
+              "score": 5,
+              "status": "heuristic",
+              "note": "模型名主要吃内容/评测流量"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-29"
+        },
+        {
+          "term": "translark",
+          "term_cn": "Translark",
+          "heat": 503,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            26,
+            42,
+            55,
+            67,
+            84,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 42,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 24,
+              "status": "measured",
+              "note": "排名 1000001→297956，强势上涨"
+            },
+            "demand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 3.4x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 0,
+              "status": "unknown",
+              "note": "类型不明"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-29"
+        },
+        {
+          "term": "aipass.go.th",
+          "term_cn": "Aipass.go.th",
+          "heat": 460,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            23,
+            39,
+            54,
+            70,
+            83,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "小涨",
+          "vacuum": 0,
+          "score": 40,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 18,
+              "status": "measured",
+              "note": "排名 638834→325563，上涨"
+            },
+            "demand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 3.1x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "重型 B2B/企业服务，难独立做"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-29"
+        },
+        {
+          "term": "krea2",
+          "term_cn": "Krea2",
+          "heat": 305,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "新发现",
+          "vacuum": 0,
+          "score": 40,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "HF 新模型",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "huggingface"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "下载 15279，有热度（无历史曲线）"
+            },
+            "demand": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "1 个来源提及"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 10,
+              "status": "heuristic",
+              "note": "新模型名，可做内容页/评测页"
+            },
+            "monetize": {
+              "score": 5,
+              "status": "heuristic",
+              "note": "模型名主要吃内容/评测流量"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-29"
+        },
+        {
+          "term": "flux-3-image-klein-comfyui",
+          "term_cn": "Flux 3 Image Klein Comfyui",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 flux 3 image klein），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 flux 3 image klein）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-29",
+          "long_tail_of": "flux 3 image klein"
+        },
+        {
+          "term": "flux-3-image-klein-huggingface",
+          "term_cn": "Flux 3 Image Klein Huggingface",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 flux 3 image klein），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 flux 3 image klein）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-29",
+          "long_tail_of": "flux 3 image klein"
+        },
+        {
+          "term": "flux-3-image-klein-base",
+          "term_cn": "Flux 3 Image Klein Base",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 flux 3 image klein），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 flux 3 image klein）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-29",
+          "long_tail_of": "flux 3 image klein"
+        },
+        {
+          "term": "flux-3-image-klein-download",
+          "term_cn": "Flux 3 Image Klein Download",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 flux 3 image klein），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 flux 3 image klein）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-29",
+          "long_tail_of": "flux 3 image klein"
+        },
+        {
+          "term": "flux-3-image-klein-reddit",
+          "term_cn": "Flux 3 Image Klein Reddit",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 flux 3 image klein），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 flux 3 image klein）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-10-29",
+          "long_tail_of": "flux 3 image klein"
         }
       ],
       "label": "AI工具词"
     },
     "games": {
       "keywords": [
+        {
+          "term": "animal-hospital-anomaly",
+          "term_cn": "Animal Hospital Anomaly",
+          "heat": 1163,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "Roblox 新游",
+          "vacuum": 1,
+          "score": 80,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "Roblox",
+              "type": "cat"
+            },
+            {
+              "text": "创建 171 天",
+              "type": "hot"
+            },
+            {
+              "text": "攻略需求 4/4",
+              "type": "hot"
+            },
+            {
+              "text": "真空 0/0",
+              "type": "hot"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Roblox 新游：在玩 46,317，总访问 2,477,122,748；独立站 未发现；Fandom 数据库 无",
+            "level": "有机会"
+          },
+          "sources": [
+            "roblox-explore",
+            "roblox-games-api",
+            "fandom-check",
+            "bing-check"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 20,
+              "status": "measured",
+              "note": "实时在玩 46,317，创建 171 天"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "4/4 攻略类联想命中：animal hospital anomaly codes roblox, animal hospital anomaly codes list｜相对量级 ×0.72（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 17,
+              "status": "measured",
+              "note": "独立站 0 · Fandom 数据库 0，真空"
+            },
+            "depth": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "类型 All，中等深度"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "有 codes 搜索需求，适合做 codes/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-28",
+          "roblox_universe_id": "10148749921",
+          "playing_now": 46317,
+          "release_date": "May 10, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.717,
+            "candidate_breadth": 43,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
         {
           "term": "break-and-steal-an-egg",
           "term_cn": "Break and Steal an Egg",
@@ -14127,6 +15076,306 @@
           }
         },
         {
+          "term": "pc-cafe-simulator",
+          "term_cn": "Pc Cafe Simulator",
+          "heat": 800,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 71,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "攻略需求 4/4",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "有机会"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "4/4 攻略类联想命中：pc cafe simulator, pc cafe simulator 2｜相对量级 ×0.12（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 simulation/strategy，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-28",
+          "steam_appid": "3375990",
+          "release_date": "Oct 27, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.117,
+            "candidate_breadth": 7,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
+        {
+          "term": "president-simulator",
+          "term_cn": "President Simulator",
+          "heat": 800,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 71,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "攻略需求 4/4",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "有机会"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "4/4 攻略类联想命中：ma2 president simulator wiki, ma 3 president simulator wiki｜相对量级 ×0.57（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 simulation，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-28",
+          "steam_appid": "3705900",
+          "release_date": "Oct 28, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.567,
+            "candidate_breadth": 34,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
+        {
+          "term": "realistic-ragdoll-engine",
+          "term_cn": "Realistic Ragdoll Engine",
+          "heat": 756,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "Roblox 新游",
+          "vacuum": 1,
+          "score": 71,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "Roblox",
+              "type": "cat"
+            },
+            {
+              "text": "创建 15 天",
+              "type": "hot"
+            },
+            {
+              "text": "真空 0/0",
+              "type": "hot"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Roblox 新游：在玩 25,685，总访问 7,048,938；独立站 未发现；Fandom 数据库 无",
+            "level": "有机会"
+          },
+          "sources": [
+            "roblox-explore",
+            "roblox-games-api",
+            "fandom-check",
+            "bing-check"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 20,
+              "status": "measured",
+              "note": "实时在玩 25,685，创建 15 天（铺词黄金期）"
+            },
+            "demand": {
+              "score": 12,
+              "status": "measured",
+              "note": "2/4 攻略类联想命中｜相对量级 ×0.03（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 17,
+              "status": "measured",
+              "note": "独立站 0 · Fandom 数据库 0，真空"
+            },
+            "depth": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "类型 All，中等深度"
+            },
+            "tool": {
+              "score": 6,
+              "status": "heuristic",
+              "note": "可做攻略内容页"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-28",
+          "roblox_universe_id": "10770593871",
+          "playing_now": 25685,
+          "release_date": "Oct 13, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.033,
+            "candidate_breadth": 2,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
+        {
           "term": "dont-splash",
           "term_cn": "DONT SPLASH",
           "heat": 900,
@@ -15456,6 +16705,108 @@
             "anchor": "minecraft",
             "ratio": 0.017,
             "candidate_breadth": 1,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
+        {
+          "term": "feed-a-mosquito",
+          "term_cn": "Feed A Mosquito",
+          "heat": 511,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "Roblox 新游",
+          "vacuum": 1,
+          "score": 63,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "Roblox",
+              "type": "cat"
+            },
+            {
+              "text": "创建 68 天",
+              "type": "hot"
+            },
+            {
+              "text": "真空 0/0",
+              "type": "hot"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Roblox 新游：在玩 21,154，总访问 25,756,198；独立站 未发现；Fandom 数据库 无",
+            "level": "有机会"
+          },
+          "sources": [
+            "roblox-explore",
+            "roblox-games-api",
+            "fandom-check",
+            "bing-check"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 20,
+              "status": "measured",
+              "note": "实时在玩 21,154，创建 68 天"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜｜相对量级 ×0.05（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 17,
+              "status": "measured",
+              "note": "独立站 0 · Fandom 数据库 0，真空"
+            },
+            "depth": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "类型 All，中等深度"
+            },
+            "tool": {
+              "score": 6,
+              "status": "heuristic",
+              "note": "可做攻略内容页"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-28",
+          "roblox_universe_id": "10747719434",
+          "playing_now": 21154,
+          "release_date": "Aug 21, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.05,
+            "candidate_breadth": 3,
             "anchor_breadth": 60,
             "method": "autocomplete breadth proxy (not Google Trends)"
           }
@@ -17564,6 +18915,291 @@
           }
         },
         {
+          "term": "groundinflames",
+          "term_cn": "Groundinflames",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜｜相对量级 ×0.13（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 strategy，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-28",
+          "steam_appid": "5211290",
+          "release_date": "Oct 28, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.133,
+            "candidate_breadth": 8,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
+        {
+          "term": "everlast-undying-tale",
+          "term_cn": "Everlast Undying Tale",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜｜相对量级 ×0.12（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure/rpg，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-28",
+          "steam_appid": "3818450",
+          "release_date": "Oct 28, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.117,
+            "candidate_breadth": 7,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
+        {
+          "term": "terraclysm-survivors",
+          "term_cn": "Terraclysm Survivors",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜｜相对量级 ×0.07（锚 minecraft，联想词估算）"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 rpg，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-10-28",
+          "steam_appid": "4360290",
+          "release_date": "Oct 28, 2026",
+          "rel_volume": {
+            "anchor": "minecraft",
+            "ratio": 0.067,
+            "candidate_breadth": 4,
+            "anchor_breadth": 60,
+            "method": "autocomplete breadth proxy (not Google Trends)"
+          }
+        },
+        {
           "term": "tap-simulator-reborn",
           "term_cn": "Tap Simulator REBORN",
           "heat": 728,
@@ -18406,7 +20042,7 @@
       "status": "live"
     }
   },
-  "updated_at": "2026-10-28T08:38:37.329198+08:00",
+  "updated_at": "2026-10-29T08:39:01.516265+08:00",
   "meta": {
     "last_rainbowsea_ok": true,
     "last_huggingface_ok": true,
