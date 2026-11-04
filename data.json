@@ -16815,6 +16815,934 @@
             }
           },
           "discovered": "2026-11-03"
+        },
+        {
+          "term": "fauzer.art",
+          "term_cn": "Fauzer.art",
+          "heat": 383,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            5,
+            15,
+            19,
+            31,
+            57,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "小涨",
+          "vacuum": 0,
+          "score": 44,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 11,
+              "status": "measured",
+              "note": "排名 495835→390685，小涨"
+            },
+            "demand": {
+              "score": 5,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 2.6x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04"
+        },
+        {
+          "term": "flockbay",
+          "term_cn": "Flockbay",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 44,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "PH 新品",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "producthunt"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "PH 近 7 天发布（2026-11-02），新品热度"
+            },
+            "demand": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "1 个来源提及"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04"
+        },
+        {
+          "term": "atos",
+          "term_cn": "Atos",
+          "heat": 512,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            32,
+            52,
+            66,
+            78,
+            87,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 42,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 24,
+              "status": "measured",
+              "note": "排名 1000001→292898，强势上涨"
+            },
+            "demand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 3.4x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 0,
+              "status": "unknown",
+              "note": "类型不明"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04"
+        },
+        {
+          "term": "autolive.chat",
+          "term_cn": "Autolive.chat",
+          "heat": 504,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            25,
+            43,
+            57,
+            71,
+            84,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 42,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 24,
+              "status": "measured",
+              "note": "排名 1000001→297088，强势上涨"
+            },
+            "demand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 3.4x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 0,
+              "status": "unknown",
+              "note": "类型不明"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04"
+        },
+        {
+          "term": "amperity",
+          "term_cn": "Amperity",
+          "heat": 483,
+          "heat_delta": "new",
+          "spark": [
+            5,
+            24,
+            46,
+            61,
+            72,
+            83,
+            95
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "上涨",
+          "vacuum": 0,
+          "score": 40,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "rainbowsea"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 18,
+              "status": "measured",
+              "note": "排名 355251→131807，上涨"
+            },
+            "demand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "1 个来源提及，增长 3.2x"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "重型 B2B/企业服务，难独立做"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04"
+        },
+        {
+          "term": "flux-3-image-klein-pup",
+          "term_cn": "Flux 3 Image Klein Pup",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 flux 3 image klein），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 flux 3 image klein）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04",
+          "long_tail_of": "flux 3 image klein"
+        },
+        {
+          "term": "krea-2-identity-edit-lora",
+          "term_cn": "Krea 2 Identity Edit Lora",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 krea 2），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 krea 2）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04",
+          "long_tail_of": "krea 2"
+        },
+        {
+          "term": "krea-2-reddit",
+          "term_cn": "Krea 2 Reddit",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 krea 2），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 krea 2）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04",
+          "long_tail_of": "krea 2"
+        },
+        {
+          "term": "krea-2-model",
+          "term_cn": "Krea 2 Model",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 krea 2），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 krea 2）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04",
+          "long_tail_of": "krea 2"
+        },
+        {
+          "term": "krea-2-reference-image",
+          "term_cn": "Krea 2 Reference Image",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "Google 联想词",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "google-autocomplete"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "Google 联想词（父词 krea 2），真实搜索派生"
+            },
+            "demand": {
+              "score": 18,
+              "status": "measured",
+              "note": "Google 联想返回的真实用户搜索词（父词 krea 2）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "真实用户长尾搜索词，直接可做内容页"
+            },
+            "monetize": {
+              "score": 0,
+              "status": "unknown",
+              "note": "变现路径不明"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04",
+          "long_tail_of": "krea 2"
+        },
+        {
+          "term": "how-do-paid-image-to-image-tools-compare-with-free-ones",
+          "term_cn": "How Do Paid Image To Image Tools Compare With Free Ones",
+          "heat": 50,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "未知",
+          "vacuum": 0,
+          "score": 39,
+          "score_label": "暂缓",
+          "tags": [
+            {
+              "text": "自家GSC",
+              "type": "hot"
+            },
+            {
+              "text": "付费意图",
+              "type": "hot"
+            },
+            {
+              "text": "AI工具",
+              "type": "cat"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "自动采集，SERP 未人工核查",
+            "level": "待核查"
+          },
+          "sources": [
+            "own_gsc"
+          ],
+          "score_detail": {
+            "trend": {
+              "score": 6,
+              "status": "measured",
+              "note": "自家站有曝光的真实查询词（GSC 实测）"
+            },
+            "demand": {
+              "score": 5,
+              "status": "measured",
+              "note": "自家站近 7 天曝光 1 次（GSC 实测）"
+            },
+            "vacuum": {
+              "score": 0,
+              "status": "unknown",
+              "note": "未做 SERP 核查"
+            },
+            "buildable": {
+              "score": 12,
+              "status": "heuristic",
+              "note": "工具/生成类，可做页面或小工具"
+            },
+            "monetize": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "工具类有明确付费意愿"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "未命中已知品牌词"
+            }
+          },
+          "discovered": "2026-11-04"
         }
       ],
       "label": "AI工具词"
@@ -22039,6 +22967,291 @@
           "release_date": "Sep 28, 2026"
         },
         {
+          "term": "bug-evolution",
+          "term_cn": "Bug Evolution",
+          "heat": 545,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "Roblox 新游",
+          "vacuum": 1,
+          "score": 63,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "Roblox",
+              "type": "cat"
+            },
+            {
+              "text": "创建 25 天",
+              "type": "hot"
+            },
+            {
+              "text": "真空 0/0",
+              "type": "hot"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Roblox 新游：在玩 24,557，总访问 13,527,049；独立站 未发现；Fandom 数据库 无",
+            "level": "有机会"
+          },
+          "sources": [
+            "roblox-explore",
+            "roblox-games-api",
+            "fandom-check",
+            "bing-check"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 20,
+              "status": "measured",
+              "note": "实时在玩 24,557，创建 25 天（铺词黄金期）"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 17,
+              "status": "measured",
+              "note": "独立站 0 · Fandom 数据库 0，真空"
+            },
+            "depth": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "类型 All，中等深度"
+            },
+            "tool": {
+              "score": 6,
+              "status": "heuristic",
+              "note": "可做攻略内容页"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-11-03",
+          "roblox_universe_id": "10769957062",
+          "playing_now": 24557,
+          "release_date": "Oct 09, 2026"
+        },
+        {
+          "term": "ragdoll-sandbox",
+          "term_cn": "Ragdoll Sandbox",
+          "heat": 519,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "Roblox 新游",
+          "vacuum": 1,
+          "score": 63,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "Roblox",
+              "type": "cat"
+            },
+            {
+              "text": "创建 18 天",
+              "type": "hot"
+            },
+            {
+              "text": "真空 0/0",
+              "type": "hot"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Roblox 新游：在玩 21,921，总访问 3,768,744；独立站 未发现；Fandom 数据库 无",
+            "level": "有机会"
+          },
+          "sources": [
+            "roblox-explore",
+            "roblox-games-api",
+            "fandom-check",
+            "bing-check"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 20,
+              "status": "measured",
+              "note": "实时在玩 21,921，创建 18 天（铺词黄金期）"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 17,
+              "status": "measured",
+              "note": "独立站 0 · Fandom 数据库 0，真空"
+            },
+            "depth": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "类型 All，中等深度"
+            },
+            "tool": {
+              "score": 6,
+              "status": "heuristic",
+              "note": "可做攻略内容页"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-11-03",
+          "roblox_universe_id": "10771155665",
+          "playing_now": 21921,
+          "release_date": "Oct 16, 2026"
+        },
+        {
+          "term": "evermore-high",
+          "term_cn": "Evermore High",
+          "heat": 503,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "Roblox 新游",
+          "vacuum": 1,
+          "score": 63,
+          "score_label": "有机会",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "Roblox",
+              "type": "cat"
+            },
+            {
+              "text": "创建 42 天",
+              "type": "hot"
+            },
+            {
+              "text": "真空 0/0",
+              "type": "hot"
+            }
+          ],
+          "competition": {
+            "bars": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Roblox 新游：在玩 20,313，总访问 5,153,394；独立站 未发现；Fandom 数据库 无",
+            "level": "有机会"
+          },
+          "sources": [
+            "roblox-explore",
+            "roblox-games-api",
+            "fandom-check",
+            "bing-check"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 20,
+              "status": "measured",
+              "note": "实时在玩 20,313，创建 42 天"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 17,
+              "status": "measured",
+              "note": "独立站 0 · Fandom 数据库 0，真空"
+            },
+            "depth": {
+              "score": 7,
+              "status": "heuristic",
+              "note": "类型 All，中等深度"
+            },
+            "tool": {
+              "score": 6,
+              "status": "heuristic",
+              "note": "可做攻略内容页"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-11-03",
+          "roblox_universe_id": "10767537135",
+          "playing_now": 20313,
+          "release_date": "Sep 22, 2026"
+        },
+        {
           "term": "rat-game",
           "term_cn": "Rat Game",
           "heat": 800,
@@ -26237,6 +27450,270 @@
           "release_date": "Nov 2, 2026"
         },
         {
+          "term": "death-at-fleming-manor",
+          "term_cn": "Death At Fleming Manor",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-11-03",
+          "steam_appid": "3758950",
+          "release_date": "Nov 3, 2026"
+        },
+        {
+          "term": "livin-the-cream-ice-cream-simulator",
+          "term_cn": "Livin The Cream Ice Cream Simulator",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 simulation，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-11-03",
+          "steam_appid": "4621810",
+          "release_date": "Nov 3, 2026"
+        },
+        {
+          "term": "heart-abyss",
+          "term_cn": "Heart Abyss",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 57,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure/strategy，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "新 IP，品牌干净"
+            }
+          },
+          "discovered": "2026-11-03",
+          "steam_appid": "1892100",
+          "release_date": "Nov 3, 2026"
+        },
+        {
           "term": "tap-simulator-reborn",
           "term_cn": "Tap Simulator REBORN",
           "heat": 728,
@@ -26435,6 +27912,182 @@
             "anchor_breadth": 60,
             "method": "autocomplete breadth proxy (not Google Trends)"
           }
+        },
+        {
+          "term": "echoes-of-central-park-dlc-tom-clancys-the-division-2",
+          "term_cn": "Echoes Of Central Park Dlc Tom Clancys The Division 2",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure/rpg，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "疑似续作，品牌词竞争大"
+            }
+          },
+          "discovered": "2026-11-03",
+          "steam_appid": "5109260",
+          "release_date": "Nov 3, 2026"
+        },
+        {
+          "term": "echoes-of-central-park-deluxe-dlc-tom-clancys-the-division-2",
+          "term_cn": "Echoes Of Central Park Deluxe Dlc Tom Clancys The Division 2",
+          "heat": 200,
+          "heat_delta": "new",
+          "spark": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "spark_count": 7,
+          "spark_unit": "天",
+          "trends": "即将发布",
+          "vacuum": 0,
+          "score": 52,
+          "score_label": "观望",
+          "tags": [
+            {
+              "text": "游戏",
+              "type": "cat"
+            },
+            {
+              "text": "即将发布",
+              "type": "hot"
+            },
+            {
+              "text": "真空待查",
+              "type": "warn"
+            }
+          ],
+          "competition": {
+            "bars": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "details": "Steam 新游自动采集，SERP 未人工核查",
+            "level": "观望"
+          },
+          "sources": [
+            "steam",
+            "popularcomingsoon"
+          ],
+          "score_detail": {
+            "momentum": {
+              "score": 22,
+              "status": "measured",
+              "note": "即将发布，铺词黄金期"
+            },
+            "demand": {
+              "score": 4,
+              "status": "measured",
+              "note": "暂无攻略类联想，玩家还没开始搜"
+            },
+            "serp": {
+              "score": 0,
+              "status": "unknown",
+              "note": "SERP 未核查（OpenSERP 接入后实测）"
+            },
+            "depth": {
+              "score": 13,
+              "status": "heuristic",
+              "note": "类型 adventure/rpg，wiki 素材多"
+            },
+            "tool": {
+              "score": 9,
+              "status": "heuristic",
+              "note": "适合做 wiki/数据库站"
+            },
+            "brand": {
+              "score": 4,
+              "status": "heuristic",
+              "note": "疑似续作，品牌词竞争大"
+            }
+          },
+          "discovered": "2026-11-03",
+          "steam_appid": "5109220",
+          "release_date": "Nov 3, 2026"
         },
         {
           "term": "burg-tag",
@@ -27174,13 +28827,13 @@
       "status": "live"
     }
   },
-  "updated_at": "2026-11-03T08:40:25.753155+08:00",
+  "updated_at": "2026-11-04T08:38:31.618341+08:00",
   "meta": {
     "last_rainbowsea_ok": true,
     "last_huggingface_ok": true,
     "last_trends_monitor_ok": true,
     "pytrends_available": false,
-    "new_added": 6,
+    "new_added": 11,
     "skipped_eliminated": 0,
     "last_producthunt_ok": true,
     "last_hackernews_ok": true,
